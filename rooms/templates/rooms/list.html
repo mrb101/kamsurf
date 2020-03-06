@@ -1,0 +1,26 @@
+{% extends "wagtailadmin/generic/index.html" %}
+{% load i18n %}
+
+{% block extra_js %}
+{{ block.super }}
+<script>
+  window.headerSearch = {
+    url: "{% url 'wagtailusers_users:index' %}",
+    termInput: "#id_q",
+    targetOutput: "#user-results"
+  }
+</script>
+{% endblock %}
+
+{% block content %}
+{% trans "Reservations" as reservation_str %}
+{% trans "Add a reservation" as add_a_reservation_str %}
+{% include "wagtailadmin/shared/header.html" with title=reservation_str add_link="wagtailusers_users:add" add_text=add_a_reservation_str icon="time" search_url="wagtailusers_users:index" %}
+
+<div class="nice-padding">
+    <div id="user-results" class="users">
+        {% include "rooms/reservations/results.html" %}
+    </div>
+</div>
+{% endblock %}
+

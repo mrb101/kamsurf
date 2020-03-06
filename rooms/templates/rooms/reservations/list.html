@@ -1,0 +1,26 @@
+{% load i18n wagtailusers_tags wagtailadmin_tags %}
+
+<table class="listing">
+    <thead>
+    <tr>
+        <th class="title">{% trans "Room Code" %}</th>
+        <th class="status">{% trans "Status" %}</th>
+        <th class="last-login">{% trans "Check in Date" %}</th>
+        <th class="last-login">{% trans "Check out Date" %}</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for reservation in reservations %}
+    <tr>
+        <td class="title" valign="top">{{ reservation.room.code }}</td>
+        <td class="status" valign="top">{{ reservation.status }}</td>
+        <td title="{{ reservation.start_date|date:'d M Y' }}">
+        {% blocktrans with time_period=reservation.start_date|timesince %}{{ time_period }} ago{% endblocktrans %}
+        </td>
+        <td title="{{ reservation.end_date|date:'d M Y' }}">
+        {% blocktrans with time_period=reservation.end_date|timesince %}{{ time_period }} ago{% endblocktrans %}
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>

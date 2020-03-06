@@ -1,0 +1,138 @@
+.now-ui-icons {
+    display: inline-block;
+    font: normal normal normal 32px/1 'Nucleo Outline';
+    speak: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.info {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 70px 0 30px;
+    text-align: center;
+}
+
+.info .info-title {
+    margin: 25px 0 15px;
+    padding: 0 15px;
+    color: #2c2c2c;
+}
+
+.info p {
+    color: #888;
+    padding: 0 15px;
+    font-size: 1.1em;
+}
+
+.bg-primary {
+    background-color: #424242 !important;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.8em;
+}
+
+.navbar p {
+    font-size: 1rem;
+}
+
+.section.section-image {
+    background-color: #424242;
+    color: #fff;
+}
+
+.section.section-image .description {
+    color: #fff;
+}
+
+.sport-section .rich-text p {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.cafe-section {
+    background-color: #424242;
+}
+
+.cafe-section .title {
+    color: #fff;
+}
+
+.cafe-section .description {
+    color: #fff;
+}
+
+.cafe-section .info-title {
+    color: #fff;
+}
+
+.cafe-section .rich-text p {
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.6em;
+}
+
+.event-section .rich-text p {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.card-link {
+    color: #424242 !important;
+}
+
+.card-description .rich-text p {
+    color: #424242 !important;
+}
+
+.list .rich-text p {
+    color: #424242 !important;
+}
+
+.price-container .price {
+    color: #424242 !important;
+}
+
+.contactus-1 .info {
+	padding: 0;
+	margin: 0;
+}
+
+.info-horizontal {
+	text-align: left !important;
+}
+
+.info {
+	max-width: 360px;
+	margin: 0 auto;
+	padding: 70px 0 30px;
+	text-align: center;
+}
+
+.contactus-1 .info .icon {
+	margin-top: 19px;
+}
+
+.info-horizontal .icon {
+	float: left;
+	margin-top: 23px;
+	margin-right: 10px;
+}
+
+.info-horizontal .icon > i {
+	font-size: 2em;
+}
+
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+.info-horizontal .description {
+	overflow: hidden;
+}
+
+.info-horizontal {
+	text-align: left !important;
+}
